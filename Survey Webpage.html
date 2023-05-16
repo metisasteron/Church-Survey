@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <meta name="description" content="A survey to receive feedback from visitors to St. John's Anglican Church" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="header">
+      <h1 id="title">St. John's Survey Form</h1>
+      <p id="description">Thank you for visiting St. John's and for helping us improve.</p>
+    </div>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Name </label><input id="name" type="text" placeholder="First and Last Name" required />
+        <label id="email-label" for="email">Email </label><input id="email" type="email" placeholder="address@email.com" required />
+        <label id="number-label" for="number">Age </label><input id="number" type="number" placeholder="Age" min="13" max="120" />
+      </fieldset>
+      <fieldset>
+        <label for="dropdown">Where did you hear about us? </label>
+          <select id="dropdown">
+            <option>Select one</option>
+            <option>Friend</option>
+            <option>Driving By</option>
+            <option>Website</option>
+            <option>Social Media</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <label for="recommendation">How likely are you to recommend St. John's to your friends?</label>
+          <p>Unlikely 1<input name="recommendation" type="radio" value="1" class="inline">
+          2<input name="recommendation" type="radio" value="2" class="inline">
+          3<input name="recommendation" type="radio" value="3" class="inline">
+          4<input name="recommendation" type="radio" value="4" class="inline">
+          5<input name="recommendation" type="radio" value="5" class="inline">Definitely</p>
+      </fieldset>
+      <fieldset>
+        <label id="denomination-question">What denominations have you been a part of before?</label>
+          <label for="Anglican"> <input type="checkbox" value="Anglican" id="Anglican" class="inline">Anglican/Episcopalian</label>
+          <label for="Baptist"><input type="checkbox" value="Baptist" id="Baptist" class="inline">Baptist/Non-Denominational</label>
+          <label for="Orthodox"><input type="checkbox" value="Orthodox" id="Orthodox" class="inline">Eastern Orthodox</label>
+          <label for="Lutheran"><input type="checkbox" value="Lutheran" id="Lutheran" class="inline">Lutheran</label>
+          <label for="Methodist"><input type="checkbox" value="Methodist" id="Methodist" class="inline">Methodist</label>
+          <label for="Pentecostal"><input type="checkbox" value="Pentecostal" id="Pentecostal" class="inline">Pentecostal/Charismatic</label>
+          <label for="Presbyterian"><input type="checkbox" value="Presbyterian" id="Presbyterian" class="inline">Presbyterian/Reformed</label>
+          <label for="Roman"><input type="checkbox" value="Roman" id="Roman" class="inline">Roman Catholic</label>
+          <label for="Other"><input type="checkbox" value="Other" id="Other" class="inline">Other  <input type="text" class="inline"> </label>
+      </fieldset>
+      <fieldset>
+        <label for="comment-box">Please enter any other comments you have about our church or the service. <textarea></textarea> </label>
+      </fieldset>
+      <input type="submit" value="Submit" id="submit" />
+    </form>
+    <footer>
+      <p class="footer-info">7 Sisterdale Rd., Boerne, TX 78006</p>
+      <p class="footer-info"><a href="www.stjohnsboerne.org">www.stjohnsboerne.org</a></p>
+    </footer>
+  </body>
+</html>
